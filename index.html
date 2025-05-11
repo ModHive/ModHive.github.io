@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ModRush - Free <!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ModRush - Free Mod APKs</title>
+<meta name="description" content="ModRush - Download the latest free Mod APKs for Android including games, tools, and social apps with premium features unlocked.">
+<meta name="keywords" content="mod apk, free apk, android games mod, premium unlocked, gta v mod apk, free fire mod apk">
+<meta name="author" content="ModRush Team">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body {font-family: 'Poppins', sans-serif; margin:0; background:linear-gradient(135deg, #e0eafc, #cfdef3); color:#333; transition:background 0.3s, color 0.3s;}
+header {background:linear-gradient(90deg, #0f2027, #203a43, #2c5364); color:white; padding:1.5rem; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.3); position:sticky; top:0; z-index:1000; border-bottom-left-radius:15px; border-bottom-right-radius:15px;}
+header h1 {margin:0; font-size:1.8rem;}
+.toggle-btn {position:absolute; top:1rem; right:1rem; background:#2196f3; color:white; border:none; border-radius:30px; padding:0.5rem 1rem; cursor:pointer; transition:background 0.3s;}
+.toggle-btn:hover {background:#1976d2;}
+.ad-banner, .ad-sticky {width:100%; max-width:100%; text-align:center; margin:1rem auto;}
+.ad-banner iframe, .ad-sticky iframe {border:none;}
+.category-filter, .search-bar {margin:1rem auto; width:90%; max-width:600px; text-align:center;}
+.category-filter select, .search-bar input {width:100%; padding:0.8rem; border-radius:30px; border:none; background:rgba(255,255,255,0.7); backdrop-filter:blur(10px); box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+.trending-slider {display:flex; overflow-x:auto; gap:1rem; padding:1rem; scroll-snap-type:x mandatory;}
+.trending-slider::-webkit-scrollbar {display:none;}
+.trending-card {flex:0 0 auto; scroll-snap-align:start; background:rgba(255,255,255,0.7); backdrop-filter:blur(10px); border-radius:20px; padding:1rem; min-width:200px; box-shadow:0 4px 10px rgba(0,0,0,0.1); text-align:center;}
+.apk-list {display:grid; grid-template-columns:repeat(auto-fill, minmax(250px, 1fr)); gap:1.5rem; padding:1.5rem;}
+.apk-card {background:rgba(255,255,255,0.7); backdrop-filter:blur(15px); border-radius:20px; box-shadow:0 4px 15px rgba(0,0,0,0.1); padding:1rem; text-align:center; border:1px solid rgba(255,255,255,0.4);}
+.apk-card img {width:80px; margin:0.5rem auto;}
+.apk-card a, .apk-card button {display:inline-block; margin:0.3rem; background:#2196f3; color:white; text-decoration:none; padding:0.4rem 1rem; border-radius:30px; border:none; cursor:pointer;}
+.apk-card a:hover, .apk-card button:hover {background:#1976d2;}
+.download-count {font-size:0.9rem; color:#555; margin-top:0.3rem;}
+footer {background:#2c5364; color:white; text-align:center; padding:1rem; border-top-left-radius:30px; border-top-right-radius:30px; margin-top:2rem;}
+@media (max-width:600px){.apk-list{grid-template-columns:1fr;}.ad-banner iframe{height:60px;}}
+.ad-sticky {position:fixed; bottom:0; left:0; width:100%; z-index:9999; background:rgba(0,0,0,0.8);}
+.close-sticky {position:absolute; top:-10px; right:5px; background:red; color:white; border:none; border-radius:50%; width:20px; height:20px; cursor:pointer; font-size:14px;}
+.dark-mode {background:#121212!important; color:#eee!important;}
+</style>
+</head>
+<body>
+<header><h1>ModRush</h1><button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button></header>
+<div class="ad-banner"><iframe src="ads.html" width="728" height="90"></iframe></div>
+<div class="category-filter"><select onchange="filterCategory(this.value)"><option value="all">All Categories</option><option value="action">Action Games</option><option value="tools">Tools</option><option value="social">Social Apps</option></select></div>
+<div class="search-bar"><input type="text" placeholder="Search apps..." oninput="searchApps(this.value)"></div>
+<div class="trending-slider">
+<div class="trending-card"><h4>BGMI Mod APK</h4><p>Aimbot, Wallhack</p></div>
+<div class="trending-card"><h4>Spotify Premium</h4><p>No Ads, Unlimited Skips</p></div>
+<div class="trending-card"><h4>Clash of Clans Mod</h4><p>Unlimited Gems</p></div>
+</div>
+<div id="apk-list" class="apk-list">
+<div class="apk-card" data-category="action"><h3>GTA V Mod APK</h3><p>Unlimited Money, All Unlocked</p><img src="gta.png" alt="GTA V Mod APK" loading="lazy"><a href="#" onclick="incrementDownloads(this)">Download</a><button onclick="shareApp('GTA V Mod APK')">Share</button><div class="download-count">Downloads: <span>120</span></div></div>
+<div class="ad-banner"><iframe src="ads.html" width="728" height="90"></iframe></div>
+<div class="apk-card" data-category="social"><h3>Snapchat Mod APK</h3><p>Premium Unlocked, No Ads</p><img src="snapchat.png" alt="Snapchat Mod APK" loading="lazy"><a href="#" onclick="incrementDownloads(this)">Download</a><button onclick="shareApp('Snapchat Mod APK')">Share</button><div class="download-count">Downloads: <span>95</span></div></div>
+<div class="ad-banner"><iframe src="ads.html" width="728" height="90"></iframe></div>
+<div class="apk-card" data-category="social"><h3>Instagram Mod APK</h3><p>Followers Booster, No Ads</p><img src="instagram.png" alt="Instagram Mod APK" loading="lazy"><a href="#" onclick="incrementDownloads(this)">Download</a><button onclick="shareApp('Instagram Mod APK')">Share</button><div class="download-count">Downloads: <span>150</span></div></div>
+<div class="ad-banner"><iframe src="ads.html" width="728" height="90"></iframe></div>
+<div class="apk-card" data-category="action"><h3>Free Fire Mod APK</h3><p>Aimbot, Unlimited Diamonds</p><img src="freefire.png" alt="Free Fire Mod APK" loading="lazy"><a href="#" onclick="incrementDownloads(this)">Download</a><button onclick="shareApp('Free Fire Mod APK')">Share</button><div class="download-count">Downloads: <span>180</span></div></div>
+</div>
+<footer>© 2025 ModRush | Free Mod APKs</footer>
+<div class="ad-sticky" id="stickyAd"><button class="close-sticky" onclick="document.getElementById('stickyAd').style.display='none'">×</button><iframe src="ads.html" width="320" height="50"></iframe></div>
+<script>
+function searchApps(q){document.querySelectorAll('.apk-card').forEach(c=>{c.style.display=c.querySelector('h3').innerText.toLowerCase().includes(q.toLowerCase())?'block':'none';});}
+function toggleDarkMode(){document.body.classList.toggle('dark-mode');}
+function incrementDownloads(e){let s=e.nextElementSibling.nextElementSibling.querySelector('span');s.innerText=parseInt(s.innerText)+1;}
+function shareApp(n){if(navigator.share){navigator.share({title:n,text:`Check out this mod APK: ${n}`,url:window.location.href});}else{alert('Share feature not supported on this browser.');}}
+function filterCategory(cat){document.querySelectorAll('.apk-card').forEach(c=>{c.style.display=cat==='all'||c.dataset.category===cat?'block':'none';});}
+window.addEventListener("beforeunload",function(e){e.preventDefault();e.returnValue='Wait! You are leaving ModRush. Download mods before you go!';return 'Wait! You are leaving ModRush. Download mods before you go!';});
+</script>
+</body>
+</html>￼Enter
